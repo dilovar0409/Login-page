@@ -98,3 +98,12 @@ export const Cart1Text1 = styled.p`
 
     }
 `;
+
+export const Click = styled.div`
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: red;
+`;
