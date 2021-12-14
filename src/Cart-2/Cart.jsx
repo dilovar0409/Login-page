@@ -8,14 +8,18 @@ const Cart2 = () => {
         <Cart2Wrapper>
             <Link to="/"><Cart2Icon><i class="fas fa-reply"></i></Cart2Icon></Link>
             <Cart1Title>Welcome Back!</Cart1Title>
-            <Cart2IconText>
-                <div><i class="fab fa-facebook-f"></i></div>
-                <p>CONTINUE WITH FACEBOOK</p>
-            </Cart2IconText>
-            <Cart2IconText1>
-                <div><i class="fab fa-google"></i></div>
-                <p>CONTINUE WITH GOOGLE</p>
-            </Cart2IconText1>
+            <a href="https://facebook.com">
+                <Cart2IconText>
+                    <div><i class="fab fa-facebook-f"></i></div>
+                    <p>CONTINUE WITH FACEBOOK</p>
+                </Cart2IconText>
+            </a>
+            <a href="https://google.com">
+                <Cart2IconText1>
+                    <div><i class="fab fa-google"></i></div>
+                    <p>CONTINUE WITH GOOGLE</p>
+                </Cart2IconText1>
+            </a>
             <Cart1Text1>OR LOG IN WITH EMAIL</Cart1Text1>
             <Cart2Input>
                 <input type="email" placeholder="Email address" />

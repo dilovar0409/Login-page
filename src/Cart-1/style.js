@@ -68,7 +68,25 @@ export const Cart1Button = styled.button`
         transition-duration: .5s;
         border: 1px solid lightgray;
     }
-    @media screen and (width:375px){
+    @media screen and (max-width:375px){
+        width: 80%;
+        height: 50px;
+        border-radius: 25px;
+        border: #8D96FD;
+        margin: auto;
+        background-color: #8D96FD;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 50px 0 20px 0;
+        &:hover{
+            color: #8D96FD;
+            background-color: white;
+            transition-duration: .5s;
+            border: 1px solid lightgray;
+        }
+    }
+    @media screen and (max-width: 482px){
         width: 80%;
         height: 50px;
         border-radius: 25px;
@@ -92,7 +110,12 @@ export const Cart1Text1 = styled.p`
     font-weight: bold;
     color: lightgray;
     text-align: center;
-    @media screen and (width: 375px){
+    @media screen and (max-width: 375px){
+        font-size: 14px;
+        margin-top: 20px;
+
+    }
+    @media screen and (max-width: 482px){
         font-size: 14px;
         margin-top: 20px;
 

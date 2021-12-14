@@ -15,6 +15,9 @@ export const Cart2Wrapper = styled.div `
         font-weight: bold;
         margin-bottom: 100px;
     }
+    a{
+        text-decoration: none;
+    }
 `;
 
 export const Cart2Icon = styled.div `
@@ -32,7 +35,13 @@ export const Cart2Icon = styled.div `
         color: white;
         transition-duration: .5s;
     }
-    @media screen and (width:375px){
+    @media screen and (max-width:375px){
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        font-size: 20px;
+    }
+    @media screen and (max-width: 482px){
         position: fixed;
         top: 10px;
         left: 10px;
@@ -40,7 +49,7 @@ export const Cart2Icon = styled.div `
     }
 `;
 
-export const Cart2IconText = styled.div `
+export const Cart2IconText = styled.button `
     width: fit-content;
     margin: auto;
     display: flex;
@@ -50,6 +59,7 @@ export const Cart2IconText = styled.div `
     color: white;
     padding: 15px 70px 15px 50px;
     border-radius: 30px;
+    border: none;
     margin-bottom: 20px;
     cursor: pointer;
     i{
@@ -60,7 +70,32 @@ export const Cart2IconText = styled.div `
         font-size: 15px;
         font-weight: bold;
     }
-    @media screen and (width:375px){
+    &:active{
+        color: red;
+        border: 30px;
+    }
+    @media screen and (max-width:375px){
+        width: fit-content;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #7582C9;
+        color: white;
+        padding: 15px 50px 15px 25px;
+        border-radius: 30px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        i{
+            font-size: 20px;
+            margin-right: 20px;
+        }
+        p{
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+    @media screen and (max-width: 482px){
         width: fit-content;
         margin: auto;
         display: flex;
@@ -83,7 +118,7 @@ export const Cart2IconText = styled.div `
     }
 `;
 
-export const Cart2IconText1 = styled.div `
+export const Cart2IconText1 = styled.button `
     width: fit-content;
     margin: auto;
     display: flex;
@@ -103,7 +138,26 @@ export const Cart2IconText1 = styled.div `
         font-size: 15px;
         font-weight: bold;
     }
-    @media screen and (width:375px){
+    @media screen and (max-width:375px){
+        width: fit-content;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 50px 15px 25px;
+        border-radius: 30px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        i{
+            font-size: 20px;
+            margin-right: 20px;
+        }
+        p{
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+    @media screen and (max-width: 482px){
         width: fit-content;
         margin: auto;
         display: flex;
@@ -138,12 +192,28 @@ export const Cart2Input = styled.div `
         margin-bottom: 25px;
         
     }
-    @media screen and (width:375px){
+    @media screen and (max-width:375px){
         display: flex;
         flex-direction: column;
         margin-top: 40px;
         input{
-            width: 280px;
+            width: 100%;
+            margin: auto;
+            padding: 15px;
+            background-color: #F1F2F6;
+            border-radius: 20px;
+            border: #F1F2F6;
+            margin-bottom: 20px;
+            
+        }
+    }
+    
+    @media screen and (max-width: 482px){
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        input{
+            width: 100%;
             margin: auto;
             padding: 15px;
             background-color: #F1F2F6;

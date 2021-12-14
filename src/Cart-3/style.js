@@ -21,4 +21,7 @@ export const Cart3TextCub = styled.div`
         border: 2px solid gray;
         border-radius: 5px;
     }
+    @media screen and (max-width: 482px){
+        width: 100%;
+    }
 `;

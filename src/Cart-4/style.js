@@ -66,7 +66,10 @@ export const Cart4Button = styled.button`
         transition-duration: .5s;
         border: 1px solid lightgray;
     }
-    @media screen and (width: 375px){
+    @media screen and (max-width: 375px){
+       width: 80%;
+    }
+    @media screen and (max-width: 482px){
        width: 80%;
     }
 `;
@@ -87,7 +90,13 @@ export const Cart4Icon = styled.div`
         color: white;
         transition-duration: .5s;
     }
-    @media screen and (width: 375px){
+    @media screen and (max-width: 375px){
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        font-size: 20px;
+    }
+    @media screen and (max-width: 482px){
         position: fixed;
         top: 10px;
         left: 10px;
